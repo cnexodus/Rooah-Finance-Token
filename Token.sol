@@ -4,15 +4,15 @@ contract Token {
     mapping(address => uint) public balances;
     mapping(address => mapping(address => uint)) public allowance;
     
-    uint public totalSupply = 10000 * 10 ** 18;
-    string public name = "Irooah Finance";
-    string public symbol = "IFN";
+    uint public totalSupply = 500000000 * 10 ** 18;
+    string public name = "cnExodus";
+    string public symbol = "CNEXV";
     uint public decimals = 18;
     
     event Transfer(address indexed from, address indexed to, uint value);
     event Approval(address indexed owner, address indexed spender, uint value);
     
-    // Send all the token to whoever deploys the contract
+    // the crooked nail...
     constructor() {
         balances[msg.sender] = totalSupply;
     }
