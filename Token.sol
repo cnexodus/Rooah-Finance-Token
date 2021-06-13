@@ -4,9 +4,9 @@ contract Token {
     mapping(address => uint) public balances;
     mapping(address => mapping(address => uint)) public allowance;
     
-    uint public totalSupply = 500000000* 10 ** 18;
-    string public name = "cnExodus";
-    string public symbol = "CNEXV";
+    uint public totalSupply = 550000000* 10 ** 18;
+    string public name = "CNExodus";
+    string public symbol = "CNEX";
     uint public decimals = 18;
     
     event Transfer(address indexed from, address indexed to, uint value);
