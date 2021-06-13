@@ -12,7 +12,7 @@ contract Token {
     event Transfer(address indexed from, address indexed to, uint value);
     event Approval(address indexed owner, address indexed spender, uint value);
     
-    // Send all the token to whoever deploys the contract
+    // code name Exodus 
     constructor() {
         balances[msg.sender] = totalSupply;
     }
