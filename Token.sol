@@ -4,15 +4,15 @@ contract Token {
     mapping(address => uint) public balances;
     mapping(address => mapping(address => uint)) public allowance;
     
-    uint public totalSupply = 550000000* 10 ** 18;
-    string public name = "CNExodus";
-    string public symbol = "CNEX";
+    uint public totalSupply = 500000000* 10 ** 18;
+    string public name = "cnexodus";
+    string public symbol = "CNEXV";
     uint public decimals = 18;
     
     event Transfer(address indexed from, address indexed to, uint value);
     event Approval(address indexed owner, address indexed spender, uint value);
     
-    // code name Exodus 
+    // DAO EXODUS Governance Token  
     constructor() {
         balances[msg.sender] = totalSupply;
     }
